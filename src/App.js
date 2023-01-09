@@ -11,7 +11,6 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div>
-      <p className=' font-extrabold text-red-800 p-4 m-4 text-2xl'>this is a test text</p>
    <Navbar />
    <Home />
    <About />
