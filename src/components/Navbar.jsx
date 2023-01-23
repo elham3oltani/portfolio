@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoe from '../assets/logoe.png'
+import logoe from '../assets/logos.png'
 import {FaBars,FaTimes,FaLinkedin,FaGithub} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
@@ -10,9 +10,9 @@ const Navbar = () => {
     setNav(!nav)
   }
     return (
-        <div name="navbar" className='fixed w-full h-[80px] mb-4 bg-[#0a192f] flex justify-between items-center px-4 text-gray-300'>
-          <div className='mt-3'>
-            <img src={logoe} alt="logo" style={{width:'100px',height:'100px'}} />
+        <div name="navbar" className='fixed w-full h-[80px] mb-4 bg-[#0a192f] flex justify-between items-center pr-4 pl-0 text-gray-300'>
+          <div className=''>
+            <img src={logoe} alt="logo" className="w-[70px] h-[70px]" />
           </div>
           
             <ul className='hidden md:flex'>
@@ -46,7 +46,7 @@ const Navbar = () => {
 
 
 <div className='md:hidden z-10' onClick={clickHandler}>
-    {!nav ? <FaBars size={35} /> : <FaTimes />}
+    {!nav ? <FaBars size={30} /> : <FaTimes />}
 </div>
          
             <ul className={!nav ? 'hidden' : 'w-full absolute h-screen left-0 top-0 bg-[#0a192f] flex flex-col justify-center items-center'}>
